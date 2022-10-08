@@ -1,0 +1,111 @@
+
+body {
+    background-color: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 70px;
+    color: white;
+    -webkit-text-stroke:1px black;
+}
+.yourPick {
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 20px ;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.rock {
+    height: 300px;
+    width: 300px;
+    background-image: url('./images/rock.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.paper {
+    height: 300px;
+    width: 400px;
+    background-image: url('./images/hand.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.scissors {
+    height: 300px;
+    width: 450px;
+    background-image: url('./images/scissors.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.ani {
+    animation: shake 0.5s;
+    animation-iteration-count: 6;
+}
+
+@keyframes shake {
+    0%{transform: translate(1px, 1px) rotate(1deg);}
+    15%{transform: translate(-3px, -1px) rotate(5deg);}
+    30%{transform: translate(-1px, -2px) rotate(-4deg);}
+    45%{transform: translate(-1px, 3px) rotate(0deg);}
+    60%{transform: translate(-1px, -2px) rotate(-3deg);}
+    75%{transform: translate(-1px, -1px) rotate(-13deg);}
+    90%{transform: translate(1px, 2px) rotate(4deg);}
+    90%{transform: translate(-1px, -2px) rotate(1deg);}
+}
+
+
+.btnBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+button {
+    background-color: blue;
+    height: 35px;
+    width: 120px;
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.btnBox2 {
+    display: flex;
+    justify-content: center;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+}
+
+.resetBtn {
+    background-color: blue;
+    height: 35px;
+    width: 350px;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+

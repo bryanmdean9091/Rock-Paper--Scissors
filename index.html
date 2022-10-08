@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Rock, Paper, Scissors</title>
+    <script defer src="./styles.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h1 id="header">Rock, Paper, Scissors</h1>
+    
+    <div class="btnBox">
+        <button class="show playBtn" id="rockBtn" onclick="shakeUp();storeVar(this.value)" value='rock'>ROCK</button>
+        <button class="show playBtn" id="paperBtn"  onclick="shakeUp();storeVar(this.value)" value='paper' >PAPER</button>
+        <button class="show playBtn" id="scissorsBtn"  onclick="shakeUp();storeVar(this.value)" value='scissors'>SCISSORS</button>     
+        </div>
+        <p id="yourHand" class="yourPick">Your Hand:
+        </p>
+    
+    <div class="container">   
+        <div class="rock show" id="pix"></div>  
+        <div class="paper hidden " id="pix"></div>
+        <div class="scissors hidden " id="pix"></div>                  
+    </div>
+    <br>
+    <br>
+    <div class="btnBox2">
+    <button class="resetBtn hidden" id="reset" onclick="reset()">Reset</button>
+</div>
+   
+
+    
+</body>
+</html>
